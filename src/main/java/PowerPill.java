@@ -9,30 +9,82 @@
  */
 public class PowerPill
 {
-    // TODO - replace this line with instruction from step 1
+    private static final int DEFAULT_POWER = 10;
 
     // instance variables
-    // TODO - replace this line with instruction from step 2
-    // TODO - replace this line with instruction from step 3
+    private int power;
+    private String name;
 
     // constructors
 
-    // TODO - replace this line with instruction from step 4
+    /**
+     \* Initializes this power pill to a default power value
+     \* and sets the name of the pill to name.
+     \* @param name the name of this power pill.
+     */
+    public PowerPill (String name){
+        this.name = name;
+    }
 
-    // TODO - replace this line with instruction from step 5
+    /**
+     * Initializes this power pill to the value of power
+     * and sets the name of the pill to name.
+     * @param name the name of this power pill
+     * @param power the power level of this power pill.
+     */
+    public PowerPill (String name, int power){
+        this.name = name;
+        this.power = power;
+
+    }
 
 
     // accessor methods
 
-    // TODO - replace this line with instruction from step 6
+    /**
+     * Returns the name of the power pill.
+     *
+     */
+    public String getName(){
+        return name;
+    }
+
+    /**
+     * Returns the power of the power pill.
+     *
+     */
+    public int getPower(){
+        return power;
+    }
 
 
     // mutator methods
 
-    // TODO - replace this line with instruction from step 7
+    /**
+     * Changes the name of the power pill to the string in the parameter.
+     *
+     * @param name  What the name of the power pill will be changed to.
+     *
+     */
+    public void setName(String name){
+        this.name = name;
+    }
+
+    /**
+     * Changes the power of the power pill to the value of the int parameter.
+     *
+     * @param power  What the power of the power pill will be changed to.
+     *
+     */
+    public void setPower(int power){
+        this.power = power;
+    }
 
     // toString method
 
-    // TODO - replace this line with instruction from step 8
+    @Override
+    public String toString(){
+        return "PowerPill " + name + " = " + power;
+    }
 
 }
